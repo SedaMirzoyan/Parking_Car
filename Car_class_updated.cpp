@@ -152,7 +152,7 @@ public:
 	{
 		if (speed > 70)
 		{
-			std::cout << "Accelerating speed, " << speed << std::endl;
+			std::cout << "High speed, " << speed << std::endl;
 		}
 		else
 		{
