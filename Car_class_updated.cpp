@@ -59,7 +59,7 @@ public:
 		std::cout << "Destructor\n";
 	}
 
-	void start()
+	void start() override
 	{
 		if (speed > 0 && speed < 10)
 		{
@@ -70,7 +70,7 @@ public:
 			return;
 		}
 	}
-	void stop()
+	void stop() override
 	{
 		if (speed == 0)
 		{
@@ -82,7 +82,7 @@ public:
 		}
 	}
 	
-	bool isFull()
+	bool isFull() override
 	{
 		bool flag = false;
 		if (amount_of_fuel < 12.5)  
@@ -118,13 +118,13 @@ public:
 	}
 
 
-	void showSpeed()
+	void showSpeed() override
 	{
 		std::cout << "Current speed is " << speed << std::endl;
 	}
 	
 
-	void controlDirections()
+	void controlDirections() override
 	{
 		int c;
 		bool flag = false;
@@ -148,7 +148,7 @@ public:
 	}
 
 
-	void move()
+	void move() override
 	{
 		if (speed > 70)
 		{
