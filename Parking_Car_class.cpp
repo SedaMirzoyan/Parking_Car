@@ -305,6 +305,10 @@ int main()
     parking.setCar(car2);
     parking.setCar(car3); 
 
+    delete car1;
+    delete car2;
+    delete car3;
+
     return 0;
 }
 
