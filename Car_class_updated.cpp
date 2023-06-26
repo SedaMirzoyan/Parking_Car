@@ -180,6 +180,9 @@ int main()
 	p1->isFull();
 	p1->stop();
 
+	delete p;
+	delete p1;
+
 	return 0;
 }
 
